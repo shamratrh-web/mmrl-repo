@@ -1,6 +1,9 @@
 name: sync-build-deploy
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '0 */6 * * *'
   workflow_dispatch:
@@ -42,7 +45,7 @@ jobs:
             echo "No feed changes"
             exit 0
           fi
-          git commit -m "Sync Morphe feed"
+          git commit -m "Sync published feed"
           git push
 
   build:

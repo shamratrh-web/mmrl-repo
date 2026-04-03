@@ -1,11 +1,2 @@
-# Local files
-local/
-
-# Log files
-log/
-
-# Util tools
-util/
-
-# MacOS
-.DS_Store
+release-assets/
+scripts/__pycache__/

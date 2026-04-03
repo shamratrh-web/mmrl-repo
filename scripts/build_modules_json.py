@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "json" / "config.json"
+DEVICE_MODULES_PATH = ROOT / "json" / "device_modules.json"
 MODULES_DIR = ROOT / "modules"
 OUTPUT_PATH = ROOT / "json" / "modules.json"
 
@@ -80,7 +81,7 @@ def parse_track(path: Path) -> dict:
     return data
 
 
-def build_module(track: dict, now: float) -> dict:
+def build_track_module(track: dict, now: float) -> dict:
     upstream = fetch_json(track["update_to"])
     meta = MODULE_META[track["id"]]
     size = fetch_size(upstream["zipUrl"])
@@ -120,16 +121,26 @@ def build_module(track: dict, now: float) -> dict:
     return module
 
 
-def main() -> None:
-    config = load_json(CONFIG_PATH)
-    now = float(int(time.time()))
-    modules = []
+def build_modules(now: float) -> list[dict]:
+    if DEVICE_MODULES_PATH.exists():
+        data = load_json(DEVICE_MODULES_PATH)
+        modules = data.get("modules") or []
+        if modules:
+            return modules
 
+    modules = []
     for track_path in sorted(MODULES_DIR.glob("*/track.yaml")):
         track = parse_track(track_path)
         if not track.get("enable", True):
             continue
-        modules.append(build_module(track, now))
+        modules.append(build_track_module(track, now))
+    return modules
+
+
+def main() -> None:
+    config = load_json(CONFIG_PATH)
+    now = float(int(time.time()))
+    modules = build_modules(now)
 
     modules_json = {
         "name": config["name"],

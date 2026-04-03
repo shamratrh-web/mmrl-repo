@@ -1,17 +1,17 @@
-# MMRL Morphe Feed
+# MMRL Device Snapshot Feed
 
-Custom MMRL repository for the upstream Morphe / ReVanced eXtended root modules from:
-
-- `https://github.com/NoName-exe/revanced-extended`
-
-Tracked modules:
-
-- `yt-morphe`
-- `ytm-morphe-arm64`
-- `ytm-morphe-arm`
+This repository publishes installable snapshot zips for the Magisk modules currently installed on the device.
 
 Add this repository to MMRL with:
 
 - `https://shamratrh-web.github.io/mmrl-repo/json/modules.json`
 
-This repository does not rebuild or modify Morphe releases. It only mirrors the upstream update JSON so MMRL can see them as a repository feed.
+How it works:
+
+- Pages serves the repository metadata and `modules.json`.
+- GitHub Releases stores the generated module zip payloads.
+- The local sync script reads `/data/adb/modules`, packages clean Magisk-installable snapshots, uploads release assets, and regenerates the feed.
+
+To refresh the feed from the device again, run:
+
+- `python /data/data/com.termux/files/home/mmrl-repo/scripts/sync_device_snapshot.py`

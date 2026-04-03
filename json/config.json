@@ -6,7 +6,7 @@
   "donate": null,
   "submission": null,
   "base_url": "https://shamratrh-web.github.io/mmrl-repo/",
-  "description": "MMRL feed for Morphe / ReVanced eXtended root modules mirrored from NoName-exe releases.",
+  "description": "MMRL feed snapshot of the Magisk modules currently installed on the device. Re-run the local sync script to refresh this list from live device state.",
   "max_num": 3,
   "enable_log": true,
   "log_dir": "log"
