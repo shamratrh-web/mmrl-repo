@@ -6,12 +6,16 @@ import subprocess
 import sys
 import tempfile
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "json" / "config.json"
 DEVICE_MODULES_PATH = ROOT / "json" / "device_modules.json"
+TRACKED_MODULES_PATH = ROOT / "json" / "tracked_modules.json"
 BUILD_SCRIPT = ROOT / "scripts" / "build_modules_json.py"
 TERMUX_PREFIX = Path("/data/data/com.termux/files/usr/bin")
 ZIP_BIN = TERMUX_PREFIX / "zip"
@@ -214,6 +218,57 @@ def derive_support(update_json: str) -> str | None:
     return update_json
 
 
+def normalize_update_url(update_json: str) -> str:
+    if not update_json:
+        return ""
+    parts = urllib.parse.urlsplit(update_json.strip())
+    if not parts.scheme or not parts.netloc:
+        return update_json.strip()
+    path = urllib.parse.quote(parts.path, safe="/")
+    query = urllib.parse.quote(parts.query, safe="=&")
+    return urllib.parse.urlunsplit((parts.scheme, parts.netloc, path, query, parts.fragment))
+
+
+def fetch_update_json(update_json: str) -> dict | None:
+    if not update_json:
+        return None
+    url = normalize_update_url(update_json)
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.load(resp)
+    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError):
+        return None
+    required = {"version", "versionCode", "zipUrl"}
+    if not required.issubset(data):
+        return None
+    return {"url": url, "data": data}
+
+
+def build_tracked_entry(module: dict, update_url: str) -> dict:
+    support = derive_support(update_url)
+    note = None
+    if module["disabled"]:
+        note = {
+            "message": "This module is currently disabled on the source device, but the feed tracks upstream owner updates.",
+        }
+    entry = {
+        "id": module["id"],
+        "name": module["name"],
+        "author": module["author"],
+        "description": module["description"],
+        "support": support,
+        "readme": support,
+        "verified": False,
+        "source": support or PAGES_BASE,
+        "update_to": update_url,
+        "added": float(int(time.time())),
+    }
+    if note:
+        entry["note"] = note
+    return entry
+
+
 def module_to_feed_entry(module: dict, zip_size: int) -> dict:
     now = float(int(time.time()))
     asset_name = f"{module['id']}-{module['versionCode']}.zip"
@@ -278,7 +333,12 @@ def main() -> None:
 
     packaged = []
     feed_modules = []
+    tracked_modules = []
     for module in modules:
+        fetched = fetch_update_json(module["updateJson"])
+        if fetched:
+            tracked_modules.append(build_tracked_entry(module, fetched["url"]))
+            continue
         asset_path, size = package_module(module, assets_dir)
         packaged.append(asset_path)
         feed_modules.append(module_to_feed_entry(module, size))
@@ -292,10 +352,17 @@ def main() -> None:
         "modules": feed_modules,
     }
     DEVICE_MODULES_PATH.write_text(json.dumps(device_manifest, indent=2) + "\n")
+    tracked_manifest = {
+        "generated_at": float(int(time.time())),
+        "source": "upstream_tracking",
+        "modules": tracked_modules,
+    }
+    TRACKED_MODULES_PATH.write_text(json.dumps(tracked_manifest, indent=2) + "\n")
 
     run([str(PYTHON_BIN), str(BUILD_SCRIPT)])
 
-    print(f"modules={len(feed_modules)}")
+    print(f"tracked_modules={len(tracked_modules)}")
+    print(f"snapshot_modules={len(feed_modules)}")
     print(f"assets={len(packaged)}")
 
 

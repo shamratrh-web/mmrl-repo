@@ -8,9 +8,373 @@
   "description": "MMRL feed snapshot of the Magisk modules currently installed on the device. Re-run the local sync script to refresh this list from live device state.",
   "metadata": {
     "version": 1,
-    "timestamp": 1775212595.0
+    "timestamp": 1775213371.0
   },
   "modules": [
+    {
+      "id": "Yurikey",
+      "name": "Yurikey Manager",
+      "version": "2.61",
+      "versionCode": 261,
+      "author": "Yurikey Dev",
+      "description": "A systemless module to get strong integrity so easily",
+      "added": 1775213255.0,
+      "support": "https://github.com/Yurii0307/yurikey",
+      "readme": "https://github.com/Yurii0307/yurikey",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213255.0,
+        "source": "https://github.com/Yurii0307/yurikey",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "2.61",
+          "versionCode": 261,
+          "zipUrl": "https://github.com/Yurii0307/yurikey/releases/download/v2.61/Yurikey_v2.61.signed.zip",
+          "changelog": "https://raw.githubusercontent.com/Yurii0307/yurikey/main/changelog.md",
+          "size": 2204846
+        }
+      ],
+      "size": 2204846
+    },
+    {
+      "id": "abootloop",
+      "name": "Anti bootloop",
+      "version": "v1.3.4",
+      "versionCode": 8,
+      "author": "nedorazrab0",
+      "description": "Bootloop protection",
+      "added": 1775213255.0,
+      "support": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+      "readme": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213255.0,
+        "source": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.3.4",
+          "versionCode": 8,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/abootloop/releases/download/v1.3.4/abootloop.zip",
+          "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Alt-Repo/abootloop/main/changelog.md",
+          "size": 5011
+        }
+      ],
+      "size": 5011
+    },
+    {
+      "id": "com.chiller3.bcr",
+      "name": "BCR",
+      "version": "2.8",
+      "versionCode": 133120,
+      "author": "chenxiaolong",
+      "description": "Basic Call Recorder",
+      "added": 1775213258.0,
+      "support": "https://github.com/chenxiaolong/BCR",
+      "readme": "https://github.com/chenxiaolong/BCR",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213258.0,
+        "source": "https://github.com/chenxiaolong/BCR",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "2.8",
+          "versionCode": 133120,
+          "zipUrl": "https://github.com/chenxiaolong/BCR/releases/download/v2.8/BCR-2.8-release.zip",
+          "changelog": "https://github.com/chenxiaolong/BCR/raw/v2.8/app/magisk/updates/release/changelog.txt",
+          "size": 2120561
+        }
+      ],
+      "size": 2120561
+    },
+    {
+      "id": "magisk-frida",
+      "name": "MagiskFrida",
+      "version": "17.9.1-1",
+      "versionCode": 17090101,
+      "author": "ViRb3 & enovella",
+      "description": "Run frida-server on boot: \u2705 (active)",
+      "added": 1775213261.0,
+      "support": "https://github.com/ViRb3/magisk-frida",
+      "readme": "https://github.com/ViRb3/magisk-frida",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213261.0,
+        "source": "https://github.com/ViRb3/magisk-frida",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "17.9.1-1",
+          "versionCode": 17090101,
+          "zipUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.9.1-1/MagiskFrida-17.9.1-1.zip",
+          "changelog": "https://raw.githubusercontent.com/ViRb3/magisk-frida/master/CHANGELOG.md",
+          "size": 100696655
+        }
+      ],
+      "size": 100696655,
+      "note": {
+        "message": "This module is currently disabled on the source device, but the feed tracks upstream owner updates."
+      }
+    },
+    {
+      "id": "net-switch",
+      "name": "Net Switch",
+      "version": "v1.2",
+      "versionCode": 54,
+      "author": "Rem01Gaming",
+      "description": "Isolate apps from Internet access.",
+      "added": 1775213262.0,
+      "support": "https://github.com/Rem01Gaming/net-switch",
+      "readme": "https://github.com/Rem01Gaming/net-switch",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213262.0,
+        "source": "https://github.com/Rem01Gaming/net-switch",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.2",
+          "versionCode": 54,
+          "zipUrl": "https://github.com/Rem01Gaming/net-switch/releases/download/1.2/net-switch-1.2-54-64b5764-release.zip",
+          "changelog": "https://raw.githubusercontent.com/Rem01Gaming/net-switch/main/changelog.md",
+          "size": 18560
+        }
+      ],
+      "size": 18560
+    },
+    {
+      "id": "tricky_store",
+      "name": "Tricky Store",
+      "version": "v1.4.1",
+      "versionCode": 245,
+      "author": "5ec1cff, aviraxp and Cyberenchanter",
+      "description": "A trick of keystore",
+      "added": 1775213263.0,
+      "support": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "readme": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213263.0,
+        "source": "https://5ec1cff.github.io/TrickyStore/update.json",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.4.1",
+          "versionCode": 245,
+          "zipUrl": "https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip",
+          "changelog": "https://github.com/5ec1cff/TrickyStore/raw/release/changelog.md",
+          "size": 2840600
+        }
+      ],
+      "size": 2840600
+    },
+    {
+      "id": "yt-morphe",
+      "name": "YouTube Morphe",
+      "version": "v20.45.36 (patches 1.22.0.mpp)",
+      "versionCode": 143,
+      "author": "NoName-exe",
+      "description": "YouTube Morphe Module",
+      "added": 1775213264.0,
+      "support": "https://github.com/NoName-exe/revanced-extended",
+      "readme": "https://github.com/NoName-exe/revanced-extended",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213264.0,
+        "source": "https://github.com/NoName-exe/revanced-extended",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v20.45.36 (patches 1.22.0.mpp)",
+          "versionCode": 143,
+          "zipUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/143/youtube-morphe-module-v20.45.36-all.zip",
+          "changelog": "https://raw.githubusercontent.com/NoName-exe/revanced-extended/update/build.md",
+          "size": 198284451
+        }
+      ],
+      "size": 198284451
+    },
+    {
+      "id": "ytm-morphe-arm64",
+      "name": "YouTube-Music Morphe",
+      "version": "v8.44.54 (patches 1.22.0.mpp)",
+      "versionCode": 143,
+      "author": "NoName-exe",
+      "description": "YouTube-Music Morphe Module",
+      "added": 1775213264.0,
+      "support": "https://github.com/NoName-exe/revanced-extended",
+      "readme": "https://github.com/NoName-exe/revanced-extended",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213264.0,
+        "source": "https://github.com/NoName-exe/revanced-extended",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v8.44.54 (patches 1.22.0.mpp)",
+          "versionCode": 143,
+          "zipUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/143/youtube-music-morphe-module-v8.44.54-arm64-v8a.zip",
+          "changelog": "https://raw.githubusercontent.com/NoName-exe/revanced-extended/update/build.md",
+          "size": 62513028
+        }
+      ],
+      "size": 62513028
+    },
+    {
+      "id": "zygisk-detach",
+      "name": "zygisk-detach",
+      "version": "v1.22.0",
+      "versionCode": 31,
+      "author": "j-hc",
+      "description": "Detaches installed apps from Play Store",
+      "added": 1775213264.0,
+      "support": "https://github.com/j-hc/zygisk-detach",
+      "readme": "https://github.com/j-hc/zygisk-detach",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213264.0,
+        "source": "https://github.com/j-hc/zygisk-detach",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.22.0",
+          "versionCode": 31,
+          "zipUrl": "https://github.com/j-hc/zygisk-detach/releases/latest/download/zygisk-detach-v1.22.0.zip",
+          "changelog": "https://raw.githubusercontent.com/j-hc/zygisk-detach/master/README.md",
+          "size": 369895
+        }
+      ],
+      "size": 369895
+    },
+    {
+      "id": "zygisk_lsposed",
+      "name": "LSPosed - Irena",
+      "version": "v1.9.2",
+      "versionCode": 7024,
+      "author": "LSPosed Developers & Irena",
+      "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 16. Requires Magisk 26.0+ and Zygisk enabled.",
+      "added": 1775213264.0,
+      "support": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "readme": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213264.0,
+        "source": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.9.2",
+          "versionCode": 7024,
+          "zipUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-zygisk-release.zip",
+          "changelog": "https://lsposed.github.io/LSPosed/release/changelog.md",
+          "size": 2462055
+        }
+      ],
+      "size": 2462055,
+      "note": {
+        "message": "This module is currently disabled on the source device, but the feed tracks upstream owner updates."
+      }
+    },
+    {
+      "id": "zygisk_vector",
+      "name": "Vector",
+      "version": "v2.0",
+      "versionCode": 3021,
+      "author": "JingMatrix",
+      "description": "A modern, Xposed-compatible framework for Android application hooking. (Android 8.1 ~ 16)",
+      "added": 1775213287.0,
+      "support": "https://github.com/JingMatrix/LSPosed",
+      "readme": "https://github.com/JingMatrix/LSPosed",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213287.0,
+        "source": "https://github.com/JingMatrix/LSPosed",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v2.0",
+          "versionCode": 3021,
+          "zipUrl": "https://github.com/JingMatrix/LSPosed/releases/download/v2.0/Vector-v2.0-Release.zip",
+          "changelog": "https://raw.githubusercontent.com/JingMatrix/LSPosed/master/zygisk/changelog.md"
+        }
+      ]
+    },
+    {
+      "id": "zygisksu",
+      "name": "Zygisk Next",
+      "version": "v1.3.3",
+      "versionCode": 731,
+      "author": "5ec1cff, Nullptr",
+      "description": "[\u2705zygote, \u2705zygote_secondary, Root: \u2705Magisk (30700), DE, ZL] Standalone implementation of Zygisk.",
+      "added": 1775213288.0,
+      "support": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "readme": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "verified": false,
+      "timestamp": 1775213371.0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1775213288.0,
+        "source": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+        "antifeatures": null
+      },
+      "versions": [
+        {
+          "timestamp": 1775213371.0,
+          "version": "v1.3.3",
+          "versionCode": 731,
+          "zipUrl": "https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.3.3/Zygisk-Next-1.3.3-731-1193e46-release.zip",
+          "changelog": "https://api.nullptr.icu/android/zygisk-next/static/changelog.md",
+          "size": 5663703
+        }
+      ],
+      "size": 5663703
+    },
     {
       "id": "Circle.to.Search",
       "name": "Circle to Search",
@@ -18,21 +382,21 @@
       "versionCode": 1,
       "author": "A\u0432\u043d\u03b9\u03b7\u03b1\u03bd",
       "description": "Circle to search for realme OnePlus and Oppo devices by @CodeSenseiX",
-      "added": 1775210568.0,
+      "added": 1775213253.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210568.0,
+      "timestamp": 1775213253.0,
       "size": 9791,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210568.0,
+        "added": 1775213253.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210568.0,
+          "timestamp": 1775213253.0,
           "version": "2.0",
           "versionCode": 1,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/Circle.to.Search-1.zip",
@@ -48,21 +412,21 @@
       "versionCode": 1,
       "author": "Kingsman44",
       "description": "Adds Photos features and unlimited original backup.",
-      "added": 1775210569.0,
+      "added": 1775213254.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210569.0,
+      "timestamp": 1775213254.0,
       "size": 225374,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210569.0,
+        "added": 1775213254.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210569.0,
+          "timestamp": 1775213254.0,
           "version": "1",
           "versionCode": 1,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/PixelifyPhotos-1.zip",
@@ -78,86 +442,26 @@
       "versionCode": 123,
       "author": "mikropsoft",
       "description": "\ud83d\udee1\ufe0f Advanced ad blocker with 4 protection levels. Interactive installation with DNS-level filtering.",
-      "added": 1775210570.0,
+      "added": 1775213255.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210570.0,
+      "timestamp": 1775213255.0,
       "size": 9740,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210570.0,
+        "added": 1775213255.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210570.0,
+          "timestamp": 1775213255.0,
           "version": "v3.0",
           "versionCode": 123,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/StevenBlock-123.zip",
           "changelog": "",
           "size": 9740
-        }
-      ]
-    },
-    {
-      "id": "Yurikey",
-      "name": "Yurikey Manager",
-      "version": "v2.61",
-      "versionCode": 261,
-      "author": "Yurikey Dev",
-      "description": "A systemless module to get strong integrity so easily",
-      "added": 1775210571.0,
-      "support": "https://github.com/Yurii0307/yurikey",
-      "readme": "https://github.com/Yurii0307/yurikey",
-      "verified": false,
-      "timestamp": 1775210571.0,
-      "size": 2201990,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210571.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210571.0,
-          "version": "v2.61",
-          "versionCode": 261,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/Yurikey-261.zip",
-          "changelog": "",
-          "size": 2201990
-        }
-      ]
-    },
-    {
-      "id": "abootloop",
-      "name": "Anti bootloop",
-      "version": "v1.3.4",
-      "versionCode": 8,
-      "author": "nedorazrab0",
-      "description": "Bootloop protection",
-      "added": 1775210572.0,
-      "support": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
-      "readme": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
-      "verified": false,
-      "timestamp": 1775210572.0,
-      "size": 4159,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210572.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210572.0,
-          "version": "v1.3.4",
-          "versionCode": 8,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/abootloop-8.zip",
-          "changelog": "",
-          "size": 4159
         }
       ]
     },
@@ -168,21 +472,21 @@
       "versionCode": 8,
       "author": "Taka\ud83c\udf3f",
       "description": "This module will clean all apps cache automatically if the total cache size is more than 1GB and can be done manually by typing \"su -c cleaner\" in the Terminal.",
-      "added": 1775210572.0,
+      "added": 1775213256.0,
       "support": "https://github.com/takeru-kageyuki/cache_cleaner",
       "readme": "https://github.com/takeru-kageyuki/cache_cleaner",
       "verified": false,
-      "timestamp": 1775210572.0,
+      "timestamp": 1775213256.0,
       "size": 1782,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210572.0,
+        "added": 1775213256.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210572.0,
+          "timestamp": 1775213256.0,
           "version": "v1.6-Stable",
           "versionCode": 8,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/cache_cleaner-8.zip",
@@ -198,56 +502,26 @@
       "versionCode": 20,
       "author": "Codex",
       "description": "Balanced Android 15 profile for Dimensity 7050. Restores freezer-friendly reclaim, adaptive PPM thermal guard, low-overhead live service, and smooth vendor-aligned behavior without forced 120Hz or zero-latency hacks.",
-      "added": 1775210573.0,
+      "added": 1775213258.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210573.0,
-      "size": 25660,
+      "timestamp": 1775213258.0,
+      "size": 26090,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210573.0,
+        "added": 1775213258.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210573.0,
+          "timestamp": 1775213258.0,
           "version": "v6.5",
           "versionCode": 20,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/careful_optimization-20.zip",
           "changelog": "",
-          "size": 25660
-        }
-      ]
-    },
-    {
-      "id": "com.chiller3.bcr",
-      "name": "BCR",
-      "version": "v2.8",
-      "versionCode": 133120,
-      "author": "chenxiaolong",
-      "description": "Basic Call Recorder",
-      "added": 1775210574.0,
-      "support": "https://github.com/chenxiaolong/BCR",
-      "readme": "https://github.com/chenxiaolong/BCR",
-      "verified": false,
-      "timestamp": 1775210574.0,
-      "size": 2112270,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210574.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210574.0,
-          "version": "v2.8",
-          "versionCode": 133120,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/com.chiller3.bcr-133120.zip",
-          "changelog": "",
-          "size": 2112270
+          "size": 26090
         }
       ]
     },
@@ -258,21 +532,21 @@
       "versionCode": 10007,
       "author": "HuskyDG",
       "description": "Protect your system from bootloop caused by Magisk modules by turning off all your modules and restart your system if bootloop is detected.",
-      "added": 1775210575.0,
+      "added": 1775213260.0,
       "support": "https://github.com/Magisk-Modules-Alt-Repo/HuskyDG_BootloopSaver",
       "readme": "https://github.com/Magisk-Modules-Alt-Repo/HuskyDG_BootloopSaver",
       "verified": false,
-      "timestamp": 1775210575.0,
+      "timestamp": 1775213260.0,
       "size": 16618,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210575.0,
+        "added": 1775213260.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210575.0,
+          "timestamp": 1775213260.0,
           "version": "v1.5",
           "versionCode": 10007,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/huskydg_bootloopsaver-10007.zip",
@@ -282,60 +556,27 @@
       ]
     },
     {
-      "id": "magisk-frida",
-      "name": "MagiskFrida",
-      "version": "17.8.3-1",
-      "versionCode": 17080301,
-      "author": "ViRb3 & enovella",
-      "description": "Run frida-server on boot: \u2705 (active)",
-      "added": 1775210591.0,
-      "support": "https://github.com/ViRb3/magisk-frida",
-      "readme": "https://github.com/ViRb3/magisk-frida",
-      "verified": false,
-      "timestamp": 1775210591.0,
-      "size": 124203309,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210591.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210591.0,
-          "version": "17.8.3-1",
-          "versionCode": 17080301,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/magisk-frida-17080301.zip",
-          "changelog": "",
-          "size": 124203309
-        }
-      ],
-      "note": {
-        "message": "This snapshot was taken from a currently disabled module on the device."
-      }
-    },
-    {
       "id": "mmrl_wpd",
       "name": "WiFi Password Viewer for MMRL",
       "version": "6.7.7",
       "versionCode": 461,
       "author": "Der_Googler, veez21 @ xda-developers",
       "description": "View all your WiFi passwords and bluetooth devices inside MMRL",
-      "added": 1775210591.0,
+      "added": 1775213261.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210591.0,
+      "timestamp": 1775213261.0,
       "size": 1702,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210591.0,
+        "added": 1775213261.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210591.0,
+          "timestamp": 1775213261.0,
           "version": "6.7.7",
           "versionCode": 461,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/mmrl_wpd-461.zip",
@@ -351,56 +592,26 @@
       "versionCode": 1,
       "author": "Network Optimization",
       "description": "Sets optimal MTU (1400) for wlan0 to prevent packet fragmentation",
-      "added": 1775210592.0,
+      "added": 1775213262.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210592.0,
+      "timestamp": 1775213262.0,
       "size": 2674,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210592.0,
+        "added": 1775213262.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210592.0,
+          "timestamp": 1775213262.0,
           "version": "1.0",
           "versionCode": 1,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/mtu-fix-1.zip",
           "changelog": "",
           "size": 2674
-        }
-      ]
-    },
-    {
-      "id": "net-switch",
-      "name": "Net Switch",
-      "version": "1.2 (54-64b5764-release)",
-      "versionCode": 54,
-      "author": "Rem01Gaming",
-      "description": "Isolate apps from Internet access.",
-      "added": 1775210592.0,
-      "support": "https://github.com/Rem01Gaming/net-switch",
-      "readme": "https://github.com/Rem01Gaming/net-switch",
-      "verified": false,
-      "timestamp": 1775210592.0,
-      "size": 1717,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210592.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210592.0,
-          "version": "1.2 (54-64b5764-release)",
-          "versionCode": 54,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/net-switch-54.zip",
-          "changelog": "",
-          "size": 1717
         }
       ]
     },
@@ -411,179 +622,26 @@
       "versionCode": 1,
       "author": "chickendrop89",
       "description": "OneShot-Extended WPS penetration testing tool with KSU WebUI. Run 'ose' command or use WebUI in KernelSU manager.",
-      "added": 1775210592.0,
+      "added": 1775213263.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210592.0,
+      "timestamp": 1775213263.0,
       "size": 7905,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210592.0,
+        "added": 1775213263.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210592.0,
+          "timestamp": 1775213263.0,
           "version": "v1.0",
           "versionCode": 1,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/oneshot-extended-1.zip",
           "changelog": "",
           "size": 7905
-        }
-      ],
-      "note": {
-        "message": "This snapshot was taken from a currently disabled module on the device."
-      }
-    },
-    {
-      "id": "tricky_store",
-      "name": "Tricky Store",
-      "version": "v1.4.1 (245-72b2e84-release)",
-      "versionCode": 245,
-      "author": "5ec1cff, aviraxp and Cyberenchanter",
-      "description": "A trick of keystore",
-      "added": 1775210594.0,
-      "support": "https://5ec1cff.github.io/TrickyStore/update.json",
-      "readme": "https://5ec1cff.github.io/TrickyStore/update.json",
-      "verified": false,
-      "timestamp": 1775210594.0,
-      "size": 2202751,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210594.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210594.0,
-          "version": "v1.4.1 (245-72b2e84-release)",
-          "versionCode": 245,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/tricky_store-245.zip",
-          "changelog": "",
-          "size": 2202751
-        }
-      ]
-    },
-    {
-      "id": "yt-morphe",
-      "name": "YouTube Morphe",
-      "version": "v20.45.36 (patches 1.22.0.mpp)",
-      "versionCode": 143,
-      "author": "NoName-exe",
-      "description": "YouTube Morphe Module",
-      "added": 1775210604.0,
-      "support": "https://github.com/NoName-exe/revanced-extended",
-      "readme": "https://github.com/NoName-exe/revanced-extended",
-      "verified": false,
-      "timestamp": 1775210604.0,
-      "size": 198372276,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210604.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210604.0,
-          "version": "v20.45.36 (patches 1.22.0.mpp)",
-          "versionCode": 143,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/yt-morphe-143.zip",
-          "changelog": "",
-          "size": 198372276
-        }
-      ]
-    },
-    {
-      "id": "ytm-morphe-arm64",
-      "name": "YouTube-Music Morphe",
-      "version": "v8.44.54 (patches 1.22.0.mpp)",
-      "versionCode": 143,
-      "author": "NoName-exe",
-      "description": "YouTube-Music Morphe Module",
-      "added": 1775210604.0,
-      "support": "https://github.com/NoName-exe/revanced-extended",
-      "readme": "https://github.com/NoName-exe/revanced-extended",
-      "verified": false,
-      "timestamp": 1775210604.0,
-      "size": 1733,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210604.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210604.0,
-          "version": "v8.44.54 (patches 1.22.0.mpp)",
-          "versionCode": 143,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/ytm-morphe-arm64-143.zip",
-          "changelog": "",
-          "size": 1733
-        }
-      ]
-    },
-    {
-      "id": "zygisk-detach",
-      "name": "zygisk-detach",
-      "version": "v1.22.0",
-      "versionCode": 31,
-      "author": "j-hc",
-      "description": "Detaches installed apps from Play Store",
-      "added": 1775210605.0,
-      "support": "https://github.com/j-hc/zygisk-detach",
-      "readme": "https://github.com/j-hc/zygisk-detach",
-      "verified": false,
-      "timestamp": 1775210605.0,
-      "size": 370279,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210605.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210605.0,
-          "version": "v1.22.0",
-          "versionCode": 31,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygisk-detach-31.zip",
-          "changelog": "",
-          "size": 370279
-        }
-      ]
-    },
-    {
-      "id": "zygisk_lsposed",
-      "name": "LSPosed - Irena",
-      "version": "v1.9.2 (7291)",
-      "versionCode": 7291,
-      "author": "LSPosed Developers & Irena",
-      "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 16. Requires Magisk 26.0+ and Zygisk enabled.",
-      "added": 1775210607.0,
-      "support": "https://lsposed.github.io/LSPosed/release/zygisk.json",
-      "readme": "https://lsposed.github.io/LSPosed/release/zygisk.json",
-      "verified": false,
-      "timestamp": 1775210607.0,
-      "size": 2376142,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210607.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210607.0,
-          "version": "v1.9.2 (7291)",
-          "versionCode": 7291,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygisk_lsposed-7291.zip",
-          "changelog": "",
-          "size": 2376142
         }
       ],
       "note": {
@@ -597,56 +655,26 @@
       "versionCode": 414,
       "author": "LSPosed Developers",
       "description": "\u3053\u308c\u3067\u52dd\u3063\u305f\u3068\u601d\u3046\u306a\u3088\u2015\u2015\u2015!!",
-      "added": 1775210608.0,
+      "added": 1775213287.0,
       "support": "https://lsposed.github.io/releases/shamiko.json",
       "readme": "https://lsposed.github.io/releases/shamiko.json",
       "verified": false,
-      "timestamp": 1775210608.0,
+      "timestamp": 1775213287.0,
       "size": 3487492,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210608.0,
+        "added": 1775213287.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210608.0,
+          "timestamp": 1775213287.0,
           "version": "v1.2.5 (414)",
           "versionCode": 414,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygisk_shamiko-414.zip",
           "changelog": "",
           "size": 3487492
-        }
-      ]
-    },
-    {
-      "id": "zygisk_vector",
-      "name": "Vector",
-      "version": "v2.0 (3021)",
-      "versionCode": 3021,
-      "author": "JingMatrix",
-      "description": "A modern, Xposed-compatible framework for Android application hooking. (Android 8.1 ~ 16)",
-      "added": 1775210609.0,
-      "support": "https://github.com/JingMatrix/LSPosed",
-      "readme": "https://github.com/JingMatrix/LSPosed",
-      "verified": false,
-      "timestamp": 1775210609.0,
-      "size": 1754,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210609.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210609.0,
-          "version": "v2.0 (3021)",
-          "versionCode": 3021,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygisk_vector-3021.zip",
-          "changelog": "",
-          "size": 1754
         }
       ]
     },
@@ -657,21 +685,21 @@
       "versionCode": 12,
       "author": "lico-n",
       "description": "Injects frida gadget via zygisk. (flavor: zygisk)",
-      "added": 1775210609.0,
+      "added": 1775213287.0,
       "support": null,
       "readme": null,
       "verified": false,
-      "timestamp": 1775210609.0,
+      "timestamp": 1775213287.0,
       "size": 165452,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1775210609.0,
+        "added": 1775213287.0,
         "source": "https://shamratrh-web.github.io/mmrl-repo/",
         "antifeatures": null
       },
       "versions": [
         {
-          "timestamp": 1775210609.0,
+          "timestamp": 1775213287.0,
           "version": "v1.9.0",
           "versionCode": 12,
           "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygiskfrida-12.zip",
@@ -682,36 +710,6 @@
       "note": {
         "message": "This snapshot was taken from a currently disabled module on the device."
       }
-    },
-    {
-      "id": "zygisksu",
-      "name": "Zygisk Next",
-      "version": "1.3.3 (731-1193e46-release)",
-      "versionCode": 731,
-      "author": "5ec1cff, Nullptr",
-      "description": "[\u2705zygote, \u2705zygote_secondary, Root: \u2705Magisk (30700), DE, ZL] Standalone implementation of Zygisk.",
-      "added": 1775210611.0,
-      "support": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
-      "readme": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
-      "verified": false,
-      "timestamp": 1775210611.0,
-      "size": 4030306,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1775210611.0,
-        "source": "https://shamratrh-web.github.io/mmrl-repo/",
-        "antifeatures": null
-      },
-      "versions": [
-        {
-          "timestamp": 1775210611.0,
-          "version": "1.3.3 (731-1193e46-release)",
-          "versionCode": 731,
-          "zipUrl": "https://github.com/shamratrh-web/mmrl-repo/releases/download/device-snapshot/zygisksu-731.zip",
-          "changelog": "",
-          "size": 4030306
-        }
-      ]
     }
   ]
 }

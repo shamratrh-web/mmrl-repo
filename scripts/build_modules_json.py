@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "json" / "config.json"
 DEVICE_MODULES_PATH = ROOT / "json" / "device_modules.json"
+TRACKED_MODULES_PATH = ROOT / "json" / "tracked_modules.json"
 MODULES_DIR = ROOT / "modules"
 OUTPUT_PATH = ROOT / "json" / "modules.json"
 
@@ -45,12 +46,13 @@ def load_json(path: Path) -> dict:
 
 
 def fetch_json(url: str) -> dict:
-    with urllib.request.urlopen(url, timeout=20) as resp:
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=20) as resp:
         return json.load(resp)
 
 
 def fetch_size(url: str) -> int | None:
-    req = urllib.request.Request(url, method="HEAD")
+    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0"})
     try:
         with urllib.request.urlopen(req, timeout=20) as resp:
             size = resp.headers.get("Content-Length")
@@ -83,7 +85,7 @@ def parse_track(path: Path) -> dict:
 
 def build_track_module(track: dict, now: float) -> dict:
     upstream = fetch_json(track["update_to"])
-    meta = MODULE_META[track["id"]]
+    meta = MODULE_META.get(track["id"], {})
     size = fetch_size(upstream["zipUrl"])
 
     version_entry = {
@@ -98,15 +100,15 @@ def build_track_module(track: dict, now: float) -> dict:
 
     module = {
         "id": track["id"],
-        "name": meta["name"],
+        "name": track.get("name") or meta.get("name") or track["id"],
         "version": upstream["version"],
         "versionCode": upstream["versionCode"],
-        "author": meta["author"],
-        "description": meta["description"],
+        "author": track.get("author") or meta.get("author") or "unknown",
+        "description": track.get("description") or meta.get("description") or "",
         "added": track.get("added", now),
-        "support": meta["support"],
-        "readme": meta["readme"],
-        "verified": meta["verified"],
+        "support": track.get("support") or meta.get("support"),
+        "readme": track.get("readme") or meta.get("readme"),
+        "verified": track.get("verified", meta.get("verified", False)),
         "timestamp": now,
         "track": {
             "type": "ONLINE_JSON",
@@ -118,15 +120,29 @@ def build_track_module(track: dict, now: float) -> dict:
     }
     if size is not None:
         module["size"] = size
+    note = track.get("note")
+    if note:
+        module["note"] = note
     return module
 
 
 def build_modules(now: float) -> list[dict]:
+    tracked_modules = []
+    tracked_ids = set()
+    if TRACKED_MODULES_PATH.exists():
+        data = load_json(TRACKED_MODULES_PATH)
+        for track in data.get("modules") or []:
+            tracked_modules.append(build_track_module(track, now))
+            tracked_ids.add(track["id"])
+
     if DEVICE_MODULES_PATH.exists():
         data = load_json(DEVICE_MODULES_PATH)
-        modules = data.get("modules") or []
-        if modules:
-            return modules
+        snapshot_modules = [
+            module for module in (data.get("modules") or [])
+            if module.get("id") not in tracked_ids
+        ]
+        if tracked_modules or snapshot_modules:
+            return tracked_modules + snapshot_modules
 
     modules = []
     for track_path in sorted(MODULES_DIR.glob("*/track.yaml")):

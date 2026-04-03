@@ -1,0 +1,156 @@
+{
+  "generated_at": 1775213297.0,
+  "source": "upstream_tracking",
+  "modules": [
+    {
+      "id": "Yurikey",
+      "name": "Yurikey Manager",
+      "author": "Yurikey Dev",
+      "description": "A systemless module to get strong integrity so easily",
+      "support": "https://github.com/Yurii0307/yurikey",
+      "readme": "https://github.com/Yurii0307/yurikey",
+      "verified": false,
+      "source": "https://github.com/Yurii0307/yurikey",
+      "update_to": "https://raw.githubusercontent.com/Yurii0307/yurikey/main/update.json",
+      "added": 1775213255.0
+    },
+    {
+      "id": "abootloop",
+      "name": "Anti bootloop",
+      "author": "nedorazrab0",
+      "description": "Bootloop protection",
+      "support": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+      "readme": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+      "verified": false,
+      "source": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
+      "update_to": "https://raw.githubusercontent.com/Magisk-Modules-Alt-Repo/abootloop/main/update.json",
+      "added": 1775213255.0
+    },
+    {
+      "id": "com.chiller3.bcr",
+      "name": "BCR",
+      "author": "chenxiaolong",
+      "description": "Basic Call Recorder",
+      "support": "https://github.com/chenxiaolong/BCR",
+      "readme": "https://github.com/chenxiaolong/BCR",
+      "verified": false,
+      "source": "https://github.com/chenxiaolong/BCR",
+      "update_to": "https://github.com/chenxiaolong/BCR/raw/master/app/magisk/updates/release/info.json",
+      "added": 1775213258.0
+    },
+    {
+      "id": "magisk-frida",
+      "name": "MagiskFrida",
+      "author": "ViRb3 & enovella",
+      "description": "Run frida-server on boot: \u2705 (active)",
+      "support": "https://github.com/ViRb3/magisk-frida",
+      "readme": "https://github.com/ViRb3/magisk-frida",
+      "verified": false,
+      "source": "https://github.com/ViRb3/magisk-frida",
+      "update_to": "https://github.com/ViRb3/magisk-frida/releases/latest/download/updater.json",
+      "added": 1775213261.0,
+      "note": {
+        "message": "This module is currently disabled on the source device, but the feed tracks upstream owner updates."
+      }
+    },
+    {
+      "id": "net-switch",
+      "name": "Net Switch",
+      "author": "Rem01Gaming",
+      "description": "Isolate apps from Internet access.",
+      "support": "https://github.com/Rem01Gaming/net-switch",
+      "readme": "https://github.com/Rem01Gaming/net-switch",
+      "verified": false,
+      "source": "https://github.com/Rem01Gaming/net-switch",
+      "update_to": "https://raw.githubusercontent.com/Rem01Gaming/net-switch/main/update.json",
+      "added": 1775213262.0
+    },
+    {
+      "id": "tricky_store",
+      "name": "Tricky Store",
+      "author": "5ec1cff, aviraxp and Cyberenchanter",
+      "description": "A trick of keystore",
+      "support": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "readme": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "verified": false,
+      "source": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "update_to": "https://5ec1cff.github.io/TrickyStore/update.json",
+      "added": 1775213263.0
+    },
+    {
+      "id": "yt-morphe",
+      "name": "YouTube Morphe",
+      "author": "NoName-exe",
+      "description": "YouTube Morphe Module",
+      "support": "https://github.com/NoName-exe/revanced-extended",
+      "readme": "https://github.com/NoName-exe/revanced-extended",
+      "verified": false,
+      "source": "https://github.com/NoName-exe/revanced-extended",
+      "update_to": "https://raw.githubusercontent.com/NoName-exe/revanced-extended/update/youtube-update.json",
+      "added": 1775213264.0
+    },
+    {
+      "id": "ytm-morphe-arm64",
+      "name": "YouTube-Music Morphe",
+      "author": "NoName-exe",
+      "description": "YouTube-Music Morphe Module",
+      "support": "https://github.com/NoName-exe/revanced-extended",
+      "readme": "https://github.com/NoName-exe/revanced-extended",
+      "verified": false,
+      "source": "https://github.com/NoName-exe/revanced-extended",
+      "update_to": "https://raw.githubusercontent.com/NoName-exe/revanced-extended/update/music%20%28arm64-v8a%29-update.json",
+      "added": 1775213264.0
+    },
+    {
+      "id": "zygisk-detach",
+      "name": "zygisk-detach",
+      "author": "j-hc",
+      "description": "Detaches installed apps from Play Store",
+      "support": "https://github.com/j-hc/zygisk-detach",
+      "readme": "https://github.com/j-hc/zygisk-detach",
+      "verified": false,
+      "source": "https://github.com/j-hc/zygisk-detach",
+      "update_to": "https://raw.githubusercontent.com/j-hc/zygisk-detach/master/update.json",
+      "added": 1775213264.0
+    },
+    {
+      "id": "zygisk_lsposed",
+      "name": "LSPosed - Irena",
+      "author": "LSPosed Developers & Irena",
+      "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 16. Requires Magisk 26.0+ and Zygisk enabled.",
+      "support": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "readme": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "verified": false,
+      "source": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "update_to": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "added": 1775213264.0,
+      "note": {
+        "message": "This module is currently disabled on the source device, but the feed tracks upstream owner updates."
+      }
+    },
+    {
+      "id": "zygisk_vector",
+      "name": "Vector",
+      "author": "JingMatrix",
+      "description": "A modern, Xposed-compatible framework for Android application hooking. (Android 8.1 ~ 16)",
+      "support": "https://github.com/JingMatrix/LSPosed",
+      "readme": "https://github.com/JingMatrix/LSPosed",
+      "verified": false,
+      "source": "https://github.com/JingMatrix/LSPosed",
+      "update_to": "https://raw.githubusercontent.com/JingMatrix/LSPosed/master/zygisk/update.json",
+      "added": 1775213287.0
+    },
+    {
+      "id": "zygisksu",
+      "name": "Zygisk Next",
+      "author": "5ec1cff, Nullptr",
+      "description": "[\u2705zygote, \u2705zygote_secondary, Root: \u2705Magisk (30700), DE, ZL] Standalone implementation of Zygisk.",
+      "support": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "readme": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "verified": false,
+      "source": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "update_to": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
+      "added": 1775213288.0
+    }
+  ]
+}
