@@ -1,0 +1,7 @@
+id: ytm-morphe-arm64
+enable: true
+source: https://github.com/NoName-exe/revanced-extended
+update_to: https://raw.githubusercontent.com/NoName-exe/revanced-extended/update/music%20%28arm64-v8a%29-update.json
+added: 1775208778
+last_update: 1775208778
+versions: 0

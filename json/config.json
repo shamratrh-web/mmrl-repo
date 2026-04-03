@@ -1,12 +1,13 @@
 {
-  "name": "Template Magisk Modules Repository",
-  "website": null,
-  "support": null,
+  "id": "shamratrh-web-mmrl-repo",
+  "name": "Shamrat MMRL Repo",
+  "website": "https://github.com/shamratrh-web/mmrl-repo",
+  "support": "https://github.com/shamratrh-web/mmrl-repo/issues",
   "donate": null,
   "submission": null,
-  "base_url": "https://example.com/",
-  "description": null,
-  "max_num": 2,
+  "base_url": "https://shamratrh-web.github.io/mmrl-repo/",
+  "description": "MMRL feed for Morphe / ReVanced eXtended root modules mirrored from NoName-exe releases.",
+  "max_num": 3,
   "enable_log": true,
   "log_dir": "log"
 }
