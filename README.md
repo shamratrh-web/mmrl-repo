@@ -5,6 +5,11 @@ This repository publishes installable snapshot zips for the Magisk modules curre
 Add this repository to MMRL with:
 
 - `https://shamratrh-web.github.io/mmrl-repo/json/modules.json`
+- `https://raw.githubusercontent.com/shamratrh-web/mmrl-repo/master/json/modules.json`
+
+GitHub repository:
+
+- `https://github.com/shamratrh-web/mmrl-repo`
 
 How it works:
 
