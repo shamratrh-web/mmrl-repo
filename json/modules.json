@@ -8,7 +8,7 @@
   "description": "MMRL feed snapshot of the Magisk modules currently installed on the device. Re-run the local sync script to refresh this list from live device state.",
   "metadata": {
     "version": 1,
-    "timestamp": 1777576515.0
+    "timestamp": 1777603462.0
   },
   "modules": [
     {
@@ -22,7 +22,7 @@
       "support": "https://github.com/Yurii0307/yurikey",
       "readme": "https://github.com/Yurii0307/yurikey",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213255.0,
@@ -31,7 +31,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "3.0.5",
           "versionCode": 305,
           "zipUrl": "https://github.com/Yurii0307/yurikey/releases/download/v3.0.5/Yurikey-v3.0.5.signed.zip",
@@ -52,7 +52,7 @@
       "support": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
       "readme": "https://github.com/Magisk-Modules-Alt-Repo/abootloop",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213255.0,
@@ -61,7 +61,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.3.4",
           "versionCode": 8,
           "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/abootloop/releases/download/v1.3.4/abootloop.zip",
@@ -74,15 +74,15 @@
     {
       "id": "com.chiller3.bcr",
       "name": "BCR",
-      "version": "2.8",
-      "versionCode": 133120,
+      "version": "2.9",
+      "versionCode": 133376,
       "author": "chenxiaolong",
       "description": "Basic Call Recorder",
       "added": 1775213258.0,
       "support": "https://github.com/chenxiaolong/BCR",
       "readme": "https://github.com/chenxiaolong/BCR",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213258.0,
@@ -91,15 +91,15 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
-          "version": "2.8",
-          "versionCode": 133120,
-          "zipUrl": "https://github.com/chenxiaolong/BCR/releases/download/v2.8/BCR-2.8-release.zip",
-          "changelog": "https://github.com/chenxiaolong/BCR/raw/v2.8/app/magisk/updates/release/changelog.txt",
-          "size": 2120561
+          "timestamp": 1777603462.0,
+          "version": "2.9",
+          "versionCode": 133376,
+          "zipUrl": "https://github.com/chenxiaolong/BCR/releases/download/v2.9/BCR-2.9-release.zip",
+          "changelog": "https://github.com/chenxiaolong/BCR/raw/v2.9/app/magisk/updates/release/changelog.txt",
+          "size": 2128955
         }
       ],
-      "size": 2120561
+      "size": 2128955
     },
     {
       "id": "magisk-frida",
@@ -112,7 +112,7 @@
       "support": "https://github.com/ViRb3/magisk-frida",
       "readme": "https://github.com/ViRb3/magisk-frida",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213261.0,
@@ -121,7 +121,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "17.9.3-1",
           "versionCode": 17090301,
           "zipUrl": "https://github.com/ViRb3/magisk-frida/releases/download/17.9.3-1/MagiskFrida-17.9.3-1.zip",
@@ -145,7 +145,7 @@
       "support": "https://github.com/Rem01Gaming/net-switch",
       "readme": "https://github.com/Rem01Gaming/net-switch",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213262.0,
@@ -154,7 +154,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.2",
           "versionCode": 54,
           "zipUrl": "https://github.com/Rem01Gaming/net-switch/releases/download/1.2/net-switch-1.2-54-64b5764-release.zip",
@@ -175,7 +175,7 @@
       "support": "https://5ec1cff.github.io/TrickyStore/update.json",
       "readme": "https://5ec1cff.github.io/TrickyStore/update.json",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213263.0,
@@ -184,7 +184,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.4.1",
           "versionCode": 245,
           "zipUrl": "https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip",
@@ -205,7 +205,7 @@
       "support": "https://github.com/NoName-exe/revanced-extended",
       "readme": "https://github.com/NoName-exe/revanced-extended",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213264.0,
@@ -214,7 +214,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v20.45.36 (patches 1.23.0.mpp)",
           "versionCode": 144,
           "zipUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/144/youtube-morphe-module-v20.45.36-all.zip",
@@ -235,7 +235,7 @@
       "support": "https://github.com/NoName-exe/revanced-extended",
       "readme": "https://github.com/NoName-exe/revanced-extended",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213264.0,
@@ -244,7 +244,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v8.47.56 (patches 1.24.0.mpp)",
           "versionCode": 145,
           "zipUrl": "https://github.com/NoName-exe/revanced-extended/releases/download/145/youtube-music-morphe-module-v8.47.56-arm64-v8a.zip",
@@ -265,7 +265,7 @@
       "support": "https://github.com/j-hc/zygisk-detach",
       "readme": "https://github.com/j-hc/zygisk-detach",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213264.0,
@@ -274,7 +274,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.23.1",
           "versionCode": 33,
           "zipUrl": "https://github.com/j-hc/zygisk-detach/releases/latest/download/zygisk-detach-v1.23.1.zip",
@@ -295,7 +295,7 @@
       "support": "https://lsposed.github.io/LSPosed/release/zygisk.json",
       "readme": "https://lsposed.github.io/LSPosed/release/zygisk.json",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213264.0,
@@ -304,7 +304,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.9.2",
           "versionCode": 7024,
           "zipUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.9.2/LSPosed-v1.9.2-7024-zygisk-release.zip",
@@ -328,7 +328,7 @@
       "support": "https://github.com/JingMatrix/LSPosed",
       "readme": "https://github.com/JingMatrix/LSPosed",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213287.0,
@@ -337,7 +337,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v2.0",
           "versionCode": 3021,
           "zipUrl": "https://github.com/JingMatrix/LSPosed/releases/download/v2.0/Vector-v2.0-Release.zip",
@@ -356,7 +356,7 @@
       "support": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
       "readme": "https://api.nullptr.icu/android/zygisk-next/static/update.json",
       "verified": false,
-      "timestamp": 1777576515.0,
+      "timestamp": 1777603462.0,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1775213288.0,
@@ -365,7 +365,7 @@
       },
       "versions": [
         {
-          "timestamp": 1777576515.0,
+          "timestamp": 1777603462.0,
           "version": "v1.3.4",
           "versionCode": 746,
           "zipUrl": "https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.3.4/Zygisk-Next-1.3.4-746-d1b76b3-release.zip",
